@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { PostState, postAdapter, initialState } from './post.state';
+import { postAdapter, initialState } from './post.state';
 import * as PostActions from './post.actions';
 
 export const postReducer = createReducer(

@@ -1,10 +1,5 @@
 import { EntityState, createEntityAdapter } from '@ngrx/entity';
-
-export interface Post {
-  id: number;
-  name: string;
-  description: string;
-}
+import { Post } from 'src/app/models/Post';
 
 export interface PostState extends EntityState<Post> {
   filter: string;
