@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Post } from 'src/app/models/Post';
+import { Post } from 'src/app/models/post';
 import { deletePost } from '../../store/post/post.actions';
 import { selectFilteredPosts } from '../../store/post/post.selectors';
 

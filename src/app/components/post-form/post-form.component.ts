@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Post } from 'src/app/models/Post';
+import { Post } from 'src/app/models/post';
 import { addPost } from '../../store/post/post.actions';
 
 @Component({
