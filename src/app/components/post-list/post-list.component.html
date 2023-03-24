@@ -14,5 +14,6 @@
         <button (click)="onDeletePost(post.id)">Eliminar</button>
       </td>
     </tr>
+    <td *ngIf="!(posts$ | async)?.length;" >Sin resultados</td>
   </tbody>
 </table>
