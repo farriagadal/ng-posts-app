@@ -21,7 +21,7 @@ npm install
 
 1. Para ejecutar la aplicación en un ambiente de desarrollo ejecuta el siguiente comando:
 
-ng serve
+ng run start
 
 2. La aplicación se levantará en la siguiente dirección:
 
