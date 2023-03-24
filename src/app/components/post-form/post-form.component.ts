@@ -20,7 +20,8 @@ export class PostFormComponent implements OnInit {
 
   onSubmit(): void {
     if (this.newPost.name && this.newPost.description) {
-      this.store.dispatch(addPost({ post: { ...this.newPost, id: Date.now() } }));
+      const post: any = { ...this.newPost, id: Date.now() };
+      this.store.dispatch(addPost({ post }));
       this.newPost = { name: '', description: '' };
     }
   }

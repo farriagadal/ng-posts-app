@@ -5,7 +5,7 @@
   </div>
   <div>
     <label for="description">Descripción</label>
-    <textarea id="description" name="description" [(ngModel)]="newPost.description" required></textarea>
+    <input type="text" id="description" name="description" [(ngModel)]="newPost.description" required />
   </div>
   <button type="submit" [disabled]="!postForm.valid">Crear</button>
 </form>

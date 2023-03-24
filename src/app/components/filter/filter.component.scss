@@ -1,18 +1,18 @@
 div {
   display: flex;
   align-items: center;
-}
-
-label {
-  margin-right: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 input {
   margin-right: 10px;
   padding: 8px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 button {
@@ -27,6 +27,7 @@ button {
   font-size: 14px;
   transition-duration: 0.4s;
   border-radius: 4px;
+  min-width: 150px;
 }
 
 button:hover {

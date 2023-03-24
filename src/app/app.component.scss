@@ -1,14 +1,18 @@
 .app-container {
-  display: flex;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  display: grid;
+  justify-content: center;
+  height: 80vh;
+  align-content: center;
 }
 
-.filter-container,
-.post-list-container,
-.post-form-container {
-  flex: 1;
-  margin: 0 10px;
+
+p {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  font-size: 15px;
 }

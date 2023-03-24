@@ -1,8 +1,7 @@
 import { createSelector } from '@ngrx/store';
-import { AppState } from '../app.state';
 import { PostState, postAdapter } from './post.state';
 
-const getPostState = (state: AppState) => state.post;
+export const getPostState = (state: { post: PostState }) => state.post;
 
 const { selectAll } = postAdapter.getSelectors();
 
@@ -11,7 +10,7 @@ export const selectPosts = createSelector(
   (state: PostState) => selectAll(state)
 );
 
-export const selectFilteredPosts = createSelector(
+export const selectFilteredPosts: any = createSelector(
   selectPosts,
   getPostState,
   (posts, state) => {
