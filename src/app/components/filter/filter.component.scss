@@ -3,15 +3,18 @@ div {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.3);
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 input {
   margin-right: 10px;
   padding: 8px;
   font-size: 14px;
-  border: none;
   border-radius: 4px;
-  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
   width: 100%;
 }
 

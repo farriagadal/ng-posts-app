@@ -3,14 +3,14 @@
     <tr>
       <th>Nombre</th>
       <th>Descripción</th>
-      <th>Acción</th>
+      <th class="right">Acción</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let post of posts$ | async">
       <td>{{ post.name }}</td>
       <td>{{ post.description }}</td>
-      <td>
+      <td class="right">
         <button (click)="onDeletePost(post.id)">Eliminar</button>
       </td>
     </tr>
